@@ -25,7 +25,7 @@ Warrior.prototype = {
     },
     faceoff:function (opponent) {
         if (opponent.power < this.power){
-            console.log(this.name + " won! " + this.name + " , you are a beast! Have a shot!");
+            console.log(this.name + " won! " + this.name + ", you are a beast! Have a shot!");
         }
         else if (opponent.power === this.power){
             console.log("Look at those muscles! Stop this nonsense and go talk things out over a beer!");
@@ -41,4 +41,4 @@ var carmen = new Warrior ("Carmen", "her");
 var trump = new Warrior ("Donald", "his");
 var watson = new Warrior ("Watson", "his");
 
-console.log(xena.fight());
+console.log(carmen.faceoff(watson));
